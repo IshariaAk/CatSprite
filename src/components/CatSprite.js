@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 
 export default function CatSprite({position,rotation ,rotationRight,handleSayHello,showHello,setShowHello,message}) {
-  // const [showHello, setShowHello] = useState(false);
-
+  // const [showHello, setShowHello] = useState(false)
   const style = {
     position: "relative",
     left: `${position.x}px`,
     top: `${position.y}px`,
     transform: `rotate(${rotation}deg) ${rotationRight ? `rotate(${rotationRight}deg)` : ''}`,
-
   };
 
   const cloudStyle = {
     position: "relative",
     left: "50%",
-    top: `${position.x+20 }px`, 
+    top: `${position.x+20}px`, 
     transform: "translate(-50%, -100%)",
-    padding: "10px",
+    padding: "5px",
     backgroundColor: "#fff",
     borderRadius: "20px",
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
